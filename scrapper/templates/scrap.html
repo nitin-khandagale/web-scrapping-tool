@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>results</title>
+	<link rel="stylesheet" href="{% static 'scrap.css' %}">
+</head>
+<body>
+<div align="center" style="font-family: arial">	
+	<h1 style="color: white">headlines</h1>
+	{% for u in alist %}
+		
+			<ul>
+				<li>
+					<h3 style="color: white">{{u}}</h3>
+
+				</li>
+			</ul>
+		
+	{% endfor %}
+</n></n>
+	<h1 style="color: white">Paragraphs and other texts</h1>
+	{% for k in para %}
+		<p style="color: white">{{ k }}</p>
+	{% endfor %}
+</div>
+</body>
+</html>
